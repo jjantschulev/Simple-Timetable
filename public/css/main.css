@@ -1,18 +1,24 @@
 body {
-  background-color: #2B2E37;
+  background-color: #263238;
+  color: black;
 }
 
 
 .mynav {
   width: 100%;
   padding: 15px 22px;
-  background-color: #161B28;
+  background-color: #3f51b5;
+  box-shadow: 0px 2px 15px 0 #000;
 }
 
 .custom-container {
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 550px;
+  box-shadow: 0 0 18px 0px #000;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 .first-period {
@@ -26,26 +32,25 @@ body {
 }
 
 .free {
-  background-color: #6B7593;
+  background-color: #757de8;
 }
 
 .class {
-  background-color: #FFBE2E;
+  background-color: #3f51b5;
 }
 
 .break {
-  background-color: #474D5F;
+  background-color: #757de8;
 }
 
 .period {
   height: 120px;
-  /* border-bottom: 3px solid #2B2E37; */
 }
 
 .middle {
   padding: 0;
   margin: 0;
-  color: #161B28;
+  font-size: 22px;
   /* height: 100%; */
   display: block;
   position: relative;
@@ -57,14 +62,24 @@ center {
 }
 
 .time {
-  font-size: 18px;
-  color: #AFB7D4;
+  color: #c5cae9;
+  font-size: 15px;
   padding: 2px 8px;
   position: absolute;
-  background-color: #2B2E37;
+  background-color: #757de8;
   left: 50%;
   border-radius: 5px;
   transform: translate(-50%, -50%);
+  /* height: 0; */
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300;
+
 }
 
 
@@ -90,10 +105,10 @@ center {
 
 
 .day {
-  color: #AFB7D4;
   padding: 10px 30px;
   margin: 0;
   left: 50%;
+  color: #c5cae9;
   transform: translateX(-50%);
   position: absolute;
   text-align: center;

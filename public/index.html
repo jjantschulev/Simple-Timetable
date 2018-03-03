@@ -12,95 +12,73 @@
 
   </head>
   <body>
-    <!-- <nav class="navbar navbar-toggleable-sm navbar-inverse" style="background-color: #161A28;">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Timetable Manager</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav mx-auto w-100 justify-content-center">
-            <li class="nav-item active">
-                <a class="nav-link" href="#"><strong>Day 6</strong></a>
-            </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Backward</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Forward</a>
-            </li>
-        </ul>
-
-      </div>
-    </nav> -->
     <nav class="mynav clearfix">
       <div class="container custom-nav-container">
-        <button class="btn-left btn btn-warning"><i class="material-icons">keyboard_arrow_left</i></button>
-        <h2 class="day">Day 6</h2>
-        <button class="btn-right btn btn-warning"><i class="material-icons">keyboard_arrow_right</i></button>
+        <button onclick="prevDay();" class="btn-left btn btn-warning"><i class="material-icons">keyboard_arrow_left</i></button>
+        <h2 id="dayText" class="day">Day 6</h2>
+        <button onclick="nextDay();" class="btn-right btn btn-warning"><i class="material-icons">keyboard_arrow_right</i></button>
       </div>
     </nav>
 
 
 
+    <div class="container">
 
-    <div class="container custom-container">
+    <div class=" custom-container">
 
 
       <div class="time">
         <center>9:00</center>
       </div>
-      <div class="period first-period free" >
+      <div id="p1" style="height: calc(80px * 2.5);" class="period first-period free" >
         <center><h1 class="middle">Free</h1></center>
       </div>
       <div class="time">
         <center>10:20</center>
       </div>
-      <div class="period class">
+      <div id="p2" style="height: calc(50px * 2.5);" class="period class">
         <center><h1 class="middle">Physics</h1></center>
       </div>
       <div class="time">
         <center>11:10</center>
       </div>
-      <div class="period break">
+      <div style="height: calc(20px * 2.5);" class="period break">
         <center><h1 class="middle">Recess</h1></center>
       </div>
       <div class="time">
         <center>11:30</center>
       </div>
-      <div class="period class">
+      <div id="p3" style="height: calc(70px * 2.5);" class="period class">
         <center><h1 class="middle">English</h1></center>
       </div>
       <div class="time">
         <center>12:40</center>
       </div>
-      <div class="period free">
+      <div id="p4" style="height: calc(50px * 2.5);" class="period free">
         <center><h1 class="middle">Free</h1></center>
       </div>
       <div class="time">
         <center>1:30</center>
       </div>
-      <div class="period break">
+      <div style="height: calc(40px * 2.5);" class="period break">
         <center><h1 class="middle">Lunch</h1></center>
       </div>
       <div class="time">
         <center>2:10</center>
       </div>
-      <div class="period free">
+      <div id="p5" style="height: calc(40px * 2.5);" class="period free">
         <center><h1 class="middle">Free</h1></center>
       </div>
       <div class="time">
         <center>2:50</center>
       </div>
-      <div class="period last-period class">
-        <center><h1 class="middle">Maths</h1></center>
+      <div id="p6" style="height: calc(40px * 2.5);" class="period free last-period">
+        <center><h1 class="middle">Free</h1></center>
       </div>
       <div class="time">
         <center>3:30</center>
       </div>
+    </div>
     </div>
 
 
@@ -109,5 +87,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+
   </body>
 </html>
